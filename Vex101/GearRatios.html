@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Gear Ratios</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="Graphics/LogoWithNoBackground.png" rel="icon">
+  <link href="Graphics/LogoWithNoBackground.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="Graphics/WhiteLogoWithNoBackground.png" alt="">
+        <h1>VRC Academy<span></span></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Lessons</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/VexWorlds5.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <h2>Gear Ratios</h2>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Lessons</li>
+        </ol>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Lesson Details Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5">
+
+          <div class="col-lg-8">
+
+            <article class="blog-details">
+
+              <div class="post-img">
+                <img src="Mechanical/GearRatioDiagram2.png" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="title">Gear Ratios</h2>
+
+              <div class="meta-top">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a>Kevin Zhao</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a><time datetime="2020-01-01">August 26 2022</time></a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-laptop"></i> <a>Builder</a></li>
+                </ul>
+              </div><!-- End meta top -->
+
+              <div class="content">
+                <p>
+                  Gears provide the ability to transfer motor energy between different systems of your robot, change the direction of flow, and also allow you to gain mechanical advantage. Mechanical advantage is the ratio of the force produced by a machine to the force applied to it. An example of mechanical advantage is when you swap gears on your bicycle. Because of the usefulness gears offer in Vex, you will need to use gear ratios in many aspects of your robot, whether for your drivetrain, lift or flywheel. Gears offer you high speeds and low torque or high torque and low speeds and a mix in the middle. (You can think of torque as power/force, high torque means you will have a lot of power/force.)
+                </p>
+
+                <p>
+                  High torque example - In the 2021-22 game Tipping Point an objective was lifting goals which required a lot of force and thus you would need to gear your lift for a high torque.
+                </p>
+
+                <p>
+                  High-speed example - In the 2022-23 game Spin-Up requires teams to shoot discs into goals and one design was building a fast spinning flywheel so you would have to gear it for speed.
+                </p>
+
+                <h3>Calculating Gear Ratios</h3>
+
+                <p>
+                  To calculate gear ratios/mechanical advantage you will need to know the formula: 
+                </p>
+
+                <blockquote>
+                  <p>
+                    Number of teeth of driven gear / Number of teeth of driver gear
+                  </p>
+                </blockquote>
+
+                <p>
+                  Driver gear is the gear connected to the motor and driven gear are the gear connected to the driver gear. 
+                </p>
+                <img src="Mechanical/GearRatioDiagram.jpeg" class="img-fluid" alt="">
+
+                <p>
+                  For example, if you are given a driver gear of 12 teeth and a driven gear of 84 you would put 84/12 in the calculator which would give you 7, meaning this gear ratio has a mechanical advantage of 7 making it a high torque gear ratio. This would mean whatever force your output force will be 7 times your input force but it is also 7 times slower than if it had a mechanical advantage of 1 (no advantage) because it has to travel 7 times as far This direct example is our gear ratio of our 4 bar lift in Tipping Point.
+                <p>
+                  Another example is the gear ratio of 60 teeth driven and 12 tooth driver. You would use the formula and would put it in your calculator which would give you a mechanical advantage of 0.2. This mechanical advantage is the opposite of the last one as it is geared for torque and this one gears it for speed. This example is our gear ratio of our flywheel in Spin-Up.
+                </p>
+
+                <p>
+                  *Note mechanical advantages over 1 will give you torque but a loss of speed and a mechanical advantage less than 0 will make you lose torque but gain speed.
+                </p>
+
+              </div><!-- End post content -->
+
+              <div class="meta-bottom">
+                <i class="bi bi-laptop"></i>
+                <ul class="cats">
+                  <li><a>Mechanical</a></li>
+                </ul>
+              </div><!-- End meta bottom -->
+
+            </article><!-- End blog post -->
+
+            <div class="post-author d-flex align-items-center">
+              <img src="TeamGraphics/Kevin.png" class="rounded-circle flex-shrink-0" alt="">
+              <div>
+                <h4>Kevin Zhao</h4>
+                <div class="social-links">
+                </div>
+                <p>
+                  Co-founder of VRC Academy. Builder for 210Z Eclipse Robotics. AP Student at Dr. E.P. Scarlett HS.
+                </p>
+              </div>
+            </div><!-- End post author -->
+
+
+          </div>
+
+          <div class="col-lg-4">
+
+            <div class="sidebar">
+
+              <!-- <div class="sidebar-item categories">
+                <h3 class="sidebar-title">Categories</h3>
+                <ul class="mt-3">
+                  <li><a>Vexcode<span></span></a></li>
+                  <li><a>PROS<span></span></a></li>
+                  <li><a>Mechanical<span></span></a></li>
+                  <li><a>Electrical<span></span></a></li>
+                  <li><a>Methods<span></span></a></li>
+                  <li><a>Other<span></span></a></li>
+                </ul>
+              </div> -->
+
+              <div class="sidebar-item recent-posts">
+                <h3 class="sidebar-title">Info</h3>
+
+                <div class="mt-3">
+                  <div class="post-item mt-3">
+                    <div>
+                      <h4><a>Category: Mechanical</a></h4>
+                    </div>
+                  </div><!-- End info item-->
+
+                  <div class="post-item">
+                    <div>
+                      <h4><a>Last Updated: August 26 2022</a></h4>
+                    </div>
+                  </div><!-- End info item-->
+
+                  <div class="post-item">
+                    <div>
+                      <h4><a>Author: Kevin Zhao</a></h4>
+                    </div>
+                  </div><!-- End info item-->
+
+                </div>
+              </div>
+
+              <div class="sidebar-item tags">
+                <h3 class="sidebar-title">Links</h3>
+                <ul class="mt-3">
+                  <li><a href="https://www.vexforum.com/t/speed-ratios-in-a-small-space/59255">Ratio Diagram</a></li>
+
+                </ul>
+              </div>
+
+            </div><!-- End Blog Sidebar -->
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Blog Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>VRC Academy</h3>
+              <p>
+                <strong>Email:</strong> vrc.acad@gmail.com<br>
+              </p>
+              <div class="social-links d-flex mt-3">
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div><!-- End footer info column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="projects.html">Lessons</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>VRC Academy</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
